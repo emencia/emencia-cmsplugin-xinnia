@@ -17,10 +17,6 @@ Cmsplugin-zinnia is a bridge between `django-blog-zinnia`_ and
 This package provides plugins, menus and apphook to integrate your Zinnia
 powered Weblog into your django-cms Web site.
 
-The code bundled in this application is a copy of the original
-``zinnia.plugins`` module, made for forward compatibility with
-django-blog-zinnia > 0.11.
-
 
 .. contents::
 
@@ -132,4 +128,10 @@ Changelog
 
 Previous release history can be find in
 `original fork <https://github.com/emencia/emencia-cmsplugin-zinnia>`_.
+
+0.9.0
+-----
+
+* Remove usage of deprecated ``python_2_unicode_compatible`` in models;
+* Use ``gettext_lazy`` instead of deprecated ``ugettext_lazy``;
 

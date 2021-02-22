@@ -12,7 +12,7 @@ downloads
 src_eggs
 develop-eggs
 .installed.cfg
-cmsplugin_zinnia.egg-info
+emencia_cmsplugin_xinnia.egg-info
 node_modules
 django-apps-src
 demo_cmsplugin_zinnia/demo.db*
