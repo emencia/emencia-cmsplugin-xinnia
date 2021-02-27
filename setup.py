@@ -10,6 +10,7 @@ setup(
 
     description='Django-CMS plugins for django-blog-xinnia',
     long_description=open('README.rst').read(),
+    long_description_content_type='text/x-rst',
 
     keywords='django, blog, weblog, zinnia, cms, plugins, apphook',
 
@@ -31,5 +32,9 @@ setup(
 
     license=cmsplugin_zinnia.__license__,
     include_package_data=True,
-    zip_safe=False
+    zip_safe=False,
+    install_requires=[
+        'Django>=2.2',
+        'django-cms>=3.7',
+    ]
 )

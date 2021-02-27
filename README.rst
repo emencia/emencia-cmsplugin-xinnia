@@ -1,3 +1,7 @@
+.. _django-blog-zinnia: http://django-blog-zinnia.com/
+.. _django-blog-xinnia: https://github.com/emencia/django-blog-xinnia
+.. _django-cms: http://django-cms.com/
+
 ========================
 emencia-cmsplugin-xinnia
 ========================
@@ -6,12 +10,13 @@ emencia-cmsplugin-xinnia
     This is a fork of
     `emencia-cmsplugin-zinnia <https://github.com/emencia/emencia-cmsplugin-zinnia>`_
     (which was a fork of original "cmsplugin-zinnia") to include fixes for last
-    Django and DjangoCMS versions with django-blog-xinnia (a fork of django-blog-zinnia).
+    Django and DjangoCMS versions with `django-blog-xinnia`_ (a fork of
+    `django-blog-zinnia`_).
 
-    Code is almost unchanged except for needed fixes and even package has renamed
-    "zinnia" to "xinnia", its module has keeped the old name.
+    Code is almost unchanged except for needed fixes and even if package name
+    has been renamed "xinnia", its module is still ``cmsplugin_zinnia``.
 
-Cmsplugin-zinnia is a bridge between `django-blog-zinnia`_ and
+Cmsplugin-zinnia is a bridge between `django-blog-xinnia`_ and
 `django-cms`_.
 
 This package provides plugins, menus and apphook to integrate your Zinnia
@@ -129,8 +134,17 @@ Changelog
 Previous release history can be find in
 `original fork <https://github.com/emencia/emencia-cmsplugin-zinnia>`_.
 
-0.9.0
------
+0.9.1 - 2021/02/27
+------------------
+
+* Drop support for Django<2.2 and django-cms<3.7;
+* Fix some package informations
+* Add missing pending migrations for template fields update from ">0.9";
+* Use ``BooleanField`` with ``null=True`` instead of deprecated
+  ``NullBooleanField``;
+
+0.9.0 - 2021/02/23
+------------------
 
 * Remove usage of deprecated ``python_2_unicode_compatible`` in models;
 * Use ``gettext_lazy`` instead of deprecated ``ugettext_lazy``;

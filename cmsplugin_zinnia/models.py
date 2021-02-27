@@ -12,7 +12,7 @@ class LatestEntriesPlugin(CMSPlugin):
     CMS Plugin for displaying latest entries
     """
 
-    featured = models.NullBooleanField(
+    featured = models.BooleanField(
         _('featured'),
         blank=True, null=True,
         choices=((True, _('Show featured entries only')),
